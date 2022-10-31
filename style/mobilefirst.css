@@ -34,7 +34,7 @@ div.top-bar {
     padding: 12px;
     background-color: var(--cor00);
     font-size: 1.1em;
-    font-weight: 300;
+    font-weight: 200;
     text-align: center;
     color: #fff;
 }
@@ -155,5 +155,23 @@ section.banner .button a {
     border-radius: 30px;
     text-decoration: none;
     color: #fff;
+}
+
+article {
+    min-width: 280px;
+    max-width: 1000px;
+    margin: auto;
+    font-weight: 200;
+    text-align: center;
+}
+
+article h1 {
+    padding: 15px;
+    font-size: 2.3em;
+    color: var(--cor00);
+}
+
+article p {
+    line-height: 28px;
 }
 
