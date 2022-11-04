@@ -175,3 +175,55 @@ article p {
     line-height: 28px;
 }
 
+section.menu-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+div.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+    min-height: 250px;
+    margin-bottom: 25px;
+    background-color: var(--cor01);
+    font-size: 1.2em;
+    color: var(--cor00); 
+}
+
+section.cont-listas {
+    padding: 10px;
+    background-color: var(--cor01);
+}
+
+section.cont-listas h2 {
+    position: relative;
+    padding: 35px 0;
+    text-align: center;
+    font-size: 2.2em;
+    color: var(--cor00);
+}
+
+section.cont-listas p {
+    text-align: center;
+}
+
+section.cont-listas h3 {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.8em;
+    color: var(--cor00);
+}
+
+span.row::after {
+    position: absolute;
+    left: 50%;
+    content: '';
+    transform: translate(-50%, -50%);
+    width: 350px;
+    border: 1px solid var(--cor00);
+}
+
