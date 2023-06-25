@@ -176,22 +176,40 @@ article p {
 }
 
 section.menu-cards {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100vw;
+    height: 500px;
 }
 
-div.cards {
+.card {
+    display: flex;
+    justify-content: center;
+    transform-style: preserve-3d;
+}
+
+.card:hover{
+    transform: translateY(180deg);
+}
+
+.face {
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 250px;
-    min-height: 250px;
-    margin-bottom: 25px;
+    width: 250px;
+    height: 250px;
+}
+
+.front {
     background-color: var(--cor01);
-    font-size: 1.2em;
-    color: var(--cor00); 
+    transform: rotateY(180deg);
+}
+
+.back {
+    background-color: var(--cor00);
 }
 
 section.cont-listas {
